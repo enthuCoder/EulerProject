@@ -23,4 +23,29 @@ public class PrimeNumbers {
         
         return result
     }
+    
+    public func findFactors(of input: Int) -> [Int]? {
+        var result = [Int]()
+        var i: Int = 2
+        var j = input
+        
+        while (j != 1) {
+            if j%i == 0 {
+                while j%i == 0 {
+                    result.append(i)
+                    j = j/i
+                }
+            }
+            i = i + 1
+        }
+        return result
+    }
+    
+    public func findLargestPrimeFactor(of input: Int) -> Int? {
+        if let factors = findFactors(of: input) {
+            return factors.last
+        } else {
+            return nil
+        }
+    }
 }
