@@ -20,5 +20,17 @@ public struct Miscelaneous {
         return sum
     }
     
+    // Binary representation of an integer number
+    // https://www.interviewbit.com/problems/binary-representation/
+    public func findDigitsInBinary(_ A: Int) -> String {
+        var temp = A
+        var result = ""
+        while temp > 0 {
+            result = "\(temp%2)" + result
+            temp = temp/2
+        }
+        return result
+    }
+
     
 }

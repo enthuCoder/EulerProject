@@ -33,3 +33,10 @@ print("Prime Numbers upto \(inputPrimeNumbersUpto): \(String(describing: primeNu
 var factorsOfNumber = 600_851_475_143
 print("Factors of \(factorsOfNumber) are: \(String(describing: primeNumbers.findFactors(of: factorsOfNumber)))")
 print("Largest Prime Factor of \(factorsOfNumber): \(String(describing: primeNumbers.findLargestPrimeFactor(of: factorsOfNumber)))")
+
+// -------  -------  -------  -------  -------  //
+// Binary representation of an integer number
+// https://www.interviewbit.com/problems/binary-representation/
+// -------  -------  -------  -------  -------  //
+var decimalNumber = 27
+print("Binary representation of \(decimalNumber) is: \(String(describing: miscelaneous.findDigitsInBinary(decimalNumber)))")
