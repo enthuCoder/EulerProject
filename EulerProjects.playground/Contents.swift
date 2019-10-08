@@ -40,3 +40,10 @@ print("Largest Prime Factor of \(factorsOfNumber): \(String(describing: primeNum
 // -------  -------  -------  -------  -------  //
 var decimalNumber = 27
 print("Binary representation of \(decimalNumber) is: \(String(describing: miscelaneous.findDigitsInBinary(decimalNumber)))")
+
+// -------  -------  -------  -------  -------  //
+// GOLDBACK's CONJECTURE
+// -------  -------  -------  -------  -------  //
+let goldbackConjectureInput = 10
+print("Goldback's Conjecture output for input \(goldbackConjectureInput): \(primeNumbers.goldbackConjecture(forInput: goldbackConjectureInput))")
+
