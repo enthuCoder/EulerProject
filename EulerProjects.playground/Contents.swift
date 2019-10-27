@@ -30,7 +30,7 @@ let primeNumbers = PrimeNumbers()
 let inputPrimeNumbersUpto = 50
 print("Prime Numbers upto \(inputPrimeNumbersUpto): \(String(describing: primeNumbers.findPrimeNumbers(forInput: inputPrimeNumbersUpto)))")
 
-var factorsOfNumber = 600_851_475_143
+var factorsOfNumber = 600_851
 print("Factors of \(factorsOfNumber) are: \(String(describing: primeNumbers.findFactors(of: factorsOfNumber)))")
 print("Largest Prime Factor of \(factorsOfNumber): \(String(describing: primeNumbers.findLargestPrimeFactor(of: factorsOfNumber)))")
 
@@ -46,4 +46,18 @@ print("Binary representation of \(decimalNumber) is: \(String(describing: miscel
 // -------  -------  -------  -------  -------  //
 let goldbackConjectureInput = 10
 print("Goldback's Conjecture output for input \(goldbackConjectureInput): \(primeNumbers.goldbackConjecture(forInput: goldbackConjectureInput))")
+
+// -------  -------  -------  -------  -------  //
+// Anagram
+// -------  -------  -------  -------  -------  //
+
+// Find Anagrams from inside an array
+let anagramInput =  ["geeksquiz", "geeksforgeeks", "abcd", "forgeeksgeeks", "zuiqkeegs", "eat for BSE"]
+let anagram = Anagram()
+print("AnagramOutput: \(String(describing: anagram.isAnagram(input: anagramInput))) \n")
+let anagramOutput = anagram.anagramsUsingDict(ofInput: anagramInput, searchWord: "geeksforgeeks")
+print("Anagram Output: \(String(describing: anagramOutput))")
+
+print("Dict Output for Anagram: \(anagram.inputStringToDict("roast beef"))")
+
 
